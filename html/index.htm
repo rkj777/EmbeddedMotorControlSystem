@@ -1,0 +1,65 @@
+<HTML>
+<meta http-equiv="refresh">
+<HEAD>
+<TITLE> ECE315 Lab #5 </TITLE>
+<BODY>
+<H1> ECE315 Winter 2015 Lab #5 </H1>
+
+<!--FUNCTIONCALL DisplayLameCounter -->
+<FORM ACTION="form.htm" METHOD=POST NAME="testform">
+	<table border ="1" style="width:100%">
+	<tr>
+	<th colspan = "2">
+	<b> <!--FUNCTIONCALL MotorMode -->	<br>
+	</b>
+	</th>
+	</tr>
+	
+	<tr>
+		<td> 
+			MIN RPM: <p>
+			
+				<input type = "text" name ="minRPM">
+				<!--FUNCTIONCALL MinRPM -->	
+			
+		</td>
+		<td>
+			MAX RPM: <p>
+			
+				<input type = "text" name ="maxRPM">
+				<!--FUNCTIONCALL MaxRPM -->		
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		Rotations: <p>
+			
+				<input type = "text" name ="rotations">
+				<!--FUNCTIONCALL Rotations -->	
+			
+		</td>
+		
+		<td>
+		Direction: <p>
+			
+				<Select name = "directions">
+					<option value = "Clockwise">Clockwise </option>
+					<option value = "Counter Clockwise"><pre>Counter Clockwise </pre> </option>
+				</Select>
+				<IMG src ="http://worterbuchmitbedeutung.com/img/valid.png" alt="Good" align="right" width= "200" />	
+			
+		</td>
+	</table>
+	<p>
+ 	
+ 	<!-- <input type="reset" value="Stop Motor"> -->
+ 	<input type="submit" value="Submit Values" name="SubmitTo"  onclick="document.getElementById('function').value='validate_me';" />
+ 	<input type="submit" value="Stop Me" name="Stop" onclick="document.getElementById('function').value='stop_me';" />
+ 	<input type="hidden" name="ECE315_form" id="function" value=""> 
+ 	
+</FORM>
+</BODY>
+</HTML>
+ 
